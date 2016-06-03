@@ -11,19 +11,19 @@ To install this api wrapper run the command `gem install pastebin-api`
 
 ## Supported API Functions
 The currently supported functions are as follows:
-  * Creating a new paste as a guest or user with the following options:
-    * api_paste_code : Paste message
-    * api_paste_name : Paste name
-    * api_paste_private : Whether paste is public, unlisted, or private > Options are - 0 = public, 1 = unlisted, 2 = private
-    * api_paste_format : What format your paste is in, see the bottom of the README for a list
-    * api_paste_expire_date : How long until the paste expires
+  * **Creating a new paste as a guest or user with the following options:**
+    * **api_paste_code** : Paste message
+    * **api_paste_name** : Paste name
+    * **api_paste_private** : Whether paste is public, unlisted, or private > Options are - 0 = public, 1 = unlisted, 2 = private
+    * **api_paste_format** : What format your paste is in, see the bottom of the README for a list
+    * **api_paste_expire_date** : How long until the paste expires
   
-  * Creating an api_user_key for user log in functions, this is done automatically if you supply an api_user_name and api_user_password
+  * **Creating an api_user_key for user log in functions, this is done automatically if you supply an api_user_name and api_user_password**
   
-  * Listing pastes created by a user and trending pastes with the following options:
-    * api_results_limit : This is for user pastes and defaults to 50 if unspecified, and has a minimum of 1 and max of 1000
+  * **Listing pastes created by a user and trending pastes with the following options:**
+    * **api_results_limit : This is for user pastes and defaults to 50 if unspecified, and has a minimum of 1 and max of 1000**
   
-  * Deleting pastes created by users
+  * **Deleting pastes created by users**
   
   ## Using This API Wrapper
   To use this in your project first require the wrapper with:
