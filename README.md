@@ -24,13 +24,16 @@ The currently supported functions are as follows:
     * **api_results_limit : This is for user pastes and defaults to 50 if unspecified, and has a minimum of 1 and max of 1000**
   
   * **Deleting pastes created by users**
-  
-  ## Using This API Wrapper
-  To use this in your project first require the wrapper with:
-  ```ruby
-  require 'pastebin-api'
-  ```
-  Then initialize the api wrapper with:
-  ```ruby
-  pastebin = Pastebin::Client.new('Your Dev Api Key')
-  ```
+
+## Using This API Wrapper
+To use this in your project first require the wrapper with:
+```ruby
+require 'pastebin-api'
+```
+Then initialize the api wrapper with:
+```ruby
+pastebin = Pastebin::Client.new('Your Dev Api Key')
+```
+Alternatively you can initialize the wrapper with a username and password to paste as a user like so:
+```ruby
+pastebin = Pastebin::Client.new('Your Dev Api Key', :)
